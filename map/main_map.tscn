@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://b01wmtgx5na37"]
+
+[ext_resource type="Texture2D" uid="uid://dxj0smps4eiqk" path="res://map/map_partt_aside.png" id="1_tbg47"]
+
+[node name="MainMap" type="Node2D"]
+
+[node name="MapParttAside_lefttop1" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(320, 208)
+texture = ExtResource("1_tbg47")
+
+[node name="MapParttAside_lefttop2" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(320, 368)
+texture = ExtResource("1_tbg47")
+
+[node name="MapParttAside_lefttop3" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(320, 528)
+texture = ExtResource("1_tbg47")
+
+[node name="MapParttAside_lefttop4" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(320, 688)
+texture = ExtResource("1_tbg47")
+
+[node name="MapParttAside_lefttop5" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(640, 688)
+texture = ExtResource("1_tbg47")
+
+[node name="MapParttAside_lefttop6" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(960, 688)
+texture = ExtResource("1_tbg47")
+
+[node name="MapParttAside_lefttop7" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(1280, 688)
+texture = ExtResource("1_tbg47")
+
+[node name="MapParttAside_lefttop8" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(1280, 528)
+texture = ExtResource("1_tbg47")
+
+[node name="MapParttAside_lefttop9" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(1280, 368)
+texture = ExtResource("1_tbg47")
+
+[node name="MapParttAside_lefttop10" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(1280, 208)
+texture = ExtResource("1_tbg47")
