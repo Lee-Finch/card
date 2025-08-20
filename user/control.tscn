@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://b4mksv8pa61cv"]
+[gd_scene load_steps=3 format=3 uid="uid://b4mksv8pa61cv"]
+
+[ext_resource type="Script" uid="uid://c4o157g5ot7fc" path="res://Game.cs" id="1_qeg7m"]
 
 [sub_resource type="Theme" id="Theme_uchyk"]
 
@@ -55,3 +57,4 @@ offset_right = 859.0
 offset_bottom = 759.0
 theme_override_font_sizes/font_size = 40
 text = "Start"
+script = ExtResource("1_qeg7m")
