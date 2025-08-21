@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=25 format=3 uid="uid://b01wmtgx5na37"]
 
 [ext_resource type="Script" uid="uid://bgpoo2ksp8ufm" path="res://map/main_map.gd" id="1_8ta2u"]
@@ -35,6 +36,26 @@ public partial class Cards2 : Node2D
 	
 }
 "
+=======
+[gd_scene load_steps=15 format=3 uid="uid://b01wmtgx5na37"]
+
+[ext_resource type="Script" uid="uid://decly3rvqm1mq" path="res://map/MapParttAsideLefttop.cs" id="1_3v4th"]
+[ext_resource type="Texture2D" uid="uid://fikfvw200c6s" path="res://map/map_part_aside/map_partt_aside_副本1.png" id="1_28ir7"]
+[ext_resource type="Texture2D" uid="uid://c5s5j4346wu37" path="res://map/map_part_aside/map_partt_aside_副本2.png" id="3_8ta2u"]
+[ext_resource type="Texture2D" uid="uid://cl4euf0npdp3q" path="res://map/map_part_aside/map_partt_aside_副本3.png" id="4_3v4th"]
+[ext_resource type="Texture2D" uid="uid://bfnu2gsiy8ty4" path="res://map/map_part_aside/map_partt_aside_副本4.png" id="5_bgocw"]
+[ext_resource type="Texture2D" uid="uid://dduyj58lc57tr" path="res://map/map_part_aside/map_partt_aside_副本5.png" id="6_70p4u"]
+[ext_resource type="Texture2D" uid="uid://cyoeo1a4cwfjy" path="res://map/map_part_aside/map_partt_aside_副本6.png" id="7_wjadj"]
+[ext_resource type="Texture2D" uid="uid://cltqbkvx74afy" path="res://map/map_part_aside/map_partt_aside_副本7.png" id="8_l5sph"]
+[ext_resource type="Texture2D" uid="uid://uafkdssn8n4w" path="res://map/map_part_aside/map_partt_aside_副本8.png" id="9_s6yhq"]
+[ext_resource type="Texture2D" uid="uid://m2rkhorub2bc" path="res://map/map_part_aside/map_partt_aside_副本9.png" id="10_kxref"]
+[ext_resource type="Texture2D" uid="uid://pfcpv75hewy" path="res://map/map_part_aside/map_partt_aside_副本10.png" id="11_63utp"]
+[ext_resource type="Texture2D" uid="uid://bmuwqkjro1gub" path="res://card/card_副本1.png" id="11_saqon"]
+[ext_resource type="Script" uid="uid://dialuuil5tin8" path="res://map/Cards2.cs" id="12_8ta2u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ta2u"]
+size = Vector2(720, 1280)
+>>>>>>> Stashed changes
 
 [node name="MainMap" type="Node2D"]
 script = ExtResource("1_8ta2u")
@@ -44,6 +65,10 @@ offset_left = 320.0
 offset_top = 208.0
 offset_right = 1376.0
 offset_bottom = 744.0
+<<<<<<< Updated upstream
+=======
+script = ExtResource("1_3v4th")
+>>>>>>> Stashed changes
 
 [node name="MapParttAside_lefttop2" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -52,12 +77,19 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("3_8ta2u")
 
 [node name="MapParttAside_lefttop2" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop2"]
+<<<<<<< Updated upstream
+=======
+visible = false
+>>>>>>> Stashed changes
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+<<<<<<< Updated upstream
 flat = true
 script = ExtResource("3_wdksk")
+=======
+>>>>>>> Stashed changes
 
 [node name="MapParttAside_lefttop3" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -66,12 +98,19 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("4_3v4th")
 
 [node name="MapParttAside_lefttop3" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop3"]
+<<<<<<< Updated upstream
+=======
+visible = false
+>>>>>>> Stashed changes
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+<<<<<<< Updated upstream
 flat = true
 script = ExtResource("5_ryr2b")
+=======
+>>>>>>> Stashed changes
 
 [node name="MapParttAside_lefttop4" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -80,12 +119,19 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("5_bgocw")
 
 [node name="MapParttAside_lefttop4" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop4"]
+<<<<<<< Updated upstream
+=======
+visible = false
+>>>>>>> Stashed changes
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+<<<<<<< Updated upstream
 flat = true
 script = ExtResource("7_ajdvo")
+=======
+>>>>>>> Stashed changes
 
 [node name="MapParttAside_lefttop5" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -94,12 +140,19 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("6_70p4u")
 
 [node name="MapParttAside_lefttop5" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop5"]
+<<<<<<< Updated upstream
+=======
+visible = false
+>>>>>>> Stashed changes
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+<<<<<<< Updated upstream
 flat = true
 script = ExtResource("9_vbwqo")
+=======
+>>>>>>> Stashed changes
 
 [node name="MapParttAside_lefttop6" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -108,12 +161,19 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("7_wjadj")
 
 [node name="MapParttAside_lefttop6" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop6"]
+<<<<<<< Updated upstream
+=======
+visible = false
+>>>>>>> Stashed changes
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+<<<<<<< Updated upstream
 flat = true
 script = ExtResource("11_qwnu0")
+=======
+>>>>>>> Stashed changes
 
 [node name="MapParttAside_lefttop7" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -122,12 +182,19 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("8_l5sph")
 
 [node name="MapParttAside_lefttop7" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop7"]
+<<<<<<< Updated upstream
+=======
+visible = false
+>>>>>>> Stashed changes
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+<<<<<<< Updated upstream
 flat = true
 script = ExtResource("13_q0bqh")
+=======
+>>>>>>> Stashed changes
 
 [node name="MapParttAside_lefttop8" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -136,12 +203,19 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("9_s6yhq")
 
 [node name="MapParttAside_lefttop8" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop8"]
+<<<<<<< Updated upstream
+=======
+visible = false
+>>>>>>> Stashed changes
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+<<<<<<< Updated upstream
 flat = true
 script = ExtResource("15_vr2bg")
+=======
+>>>>>>> Stashed changes
 
 [node name="MapParttAside_lefttop9" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -150,12 +224,19 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("10_kxref")
 
 [node name="MapParttAside_lefttop9" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop9"]
+<<<<<<< Updated upstream
+=======
+visible = false
+>>>>>>> Stashed changes
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+<<<<<<< Updated upstream
 flat = true
 script = ExtResource("17_0071i")
+=======
+>>>>>>> Stashed changes
 
 [node name="MapParttAside_lefttop10" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -164,12 +245,19 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("11_63utp")
 
 [node name="MapParttAside_lefttop10" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop10"]
+<<<<<<< Updated upstream
+=======
+visible = false
+>>>>>>> Stashed changes
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+<<<<<<< Updated upstream
 flat = true
 script = ExtResource("19_2u2m7")
+=======
+>>>>>>> Stashed changes
 
 [node name="MapParttAside_lefttop1" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -177,14 +265,21 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("1_28ir7")
 
 [node name="MapParttAside_lefttop1" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop1"]
+<<<<<<< Updated upstream
+=======
+visible = false
+>>>>>>> Stashed changes
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+<<<<<<< Updated upstream
 flat = true
 icon_alignment = 1
 expand_icon = true
 script = ExtResource("11_3v4th")
+=======
+>>>>>>> Stashed changes
 
 [node name="cards" type="Node2D" parent="."]
 visible = false
@@ -265,7 +360,11 @@ texture = ExtResource("11_saqon")
 visible = false
 position = Vector2(216, 240)
 scale = Vector2(0.25, 0.25)
+<<<<<<< Updated upstream
 script = SubResource("CSharpScript_3v4th")
+=======
+script = ExtResource("12_8ta2u")
+>>>>>>> Stashed changes
 
 [node name="card1" type="Node2D" parent="cards2"]
 
@@ -336,6 +435,7 @@ shape = SubResource("RectangleShape2D_8ta2u")
 
 [node name="card1" type="Sprite2D" parent="cards2/card7"]
 texture = ExtResource("11_saqon")
+<<<<<<< Updated upstream
 
 [connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop2/MapParttAside_lefttop2" to="." method="_on_map_partt_aside_lefttop_2_pressed"]
 [connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop3/MapParttAside_lefttop3" to="MapParttAside_lefttop/MapParttAside_lefttop3/MapParttAside_lefttop3" method="_on_pressed"]
@@ -347,3 +447,5 @@ texture = ExtResource("11_saqon")
 [connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop9/MapParttAside_lefttop9" to="MapParttAside_lefttop/MapParttAside_lefttop9/MapParttAside_lefttop9" method="_on_pressed"]
 [connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop10/MapParttAside_lefttop10" to="MapParttAside_lefttop/MapParttAside_lefttop1/MapParttAside_lefttop1" method="_on_map_partt_aside_lefttop_10_pressed"]
 [connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop1/MapParttAside_lefttop1" to="MapParttAside_lefttop/MapParttAside_lefttop1/MapParttAside_lefttop1" method="_on_pressed"]
+=======
+>>>>>>> Stashed changes
