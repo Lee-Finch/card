@@ -1,30 +1,49 @@
-[gd_scene load_steps=15 format=3 uid="uid://b01wmtgx5na37"]
+[gd_scene load_steps=25 format=3 uid="uid://b01wmtgx5na37"]
 
-[ext_resource type="Script" uid="uid://decly3rvqm1mq" path="res://map/MapParttAsideLefttop.cs" id="1_3v4th"]
+[ext_resource type="Script" uid="uid://bgpoo2ksp8ufm" path="res://map/main_map.gd" id="1_8ta2u"]
 [ext_resource type="Texture2D" uid="uid://fikfvw200c6s" path="res://map/map_part_aside/map_partt_aside_副本1.png" id="1_28ir7"]
 [ext_resource type="Texture2D" uid="uid://c5s5j4346wu37" path="res://map/map_part_aside/map_partt_aside_副本2.png" id="3_8ta2u"]
+[ext_resource type="Script" uid="uid://tp2ysirtelj" path="res://map/script/map_partt_aside_lefttop_2.gd" id="3_wdksk"]
 [ext_resource type="Texture2D" uid="uid://cl4euf0npdp3q" path="res://map/map_part_aside/map_partt_aside_副本3.png" id="4_3v4th"]
 [ext_resource type="Texture2D" uid="uid://bfnu2gsiy8ty4" path="res://map/map_part_aside/map_partt_aside_副本4.png" id="5_bgocw"]
+[ext_resource type="Script" uid="uid://c64a1frfuijxf" path="res://map/script/map_partt_aside_lefttop_3.gd" id="5_ryr2b"]
 [ext_resource type="Texture2D" uid="uid://dduyj58lc57tr" path="res://map/map_part_aside/map_partt_aside_副本5.png" id="6_70p4u"]
+[ext_resource type="Script" uid="uid://b6320o3yxapt8" path="res://map/script/map_partt_aside_lefttop_4.gd" id="7_ajdvo"]
 [ext_resource type="Texture2D" uid="uid://cyoeo1a4cwfjy" path="res://map/map_part_aside/map_partt_aside_副本6.png" id="7_wjadj"]
 [ext_resource type="Texture2D" uid="uid://cltqbkvx74afy" path="res://map/map_part_aside/map_partt_aside_副本7.png" id="8_l5sph"]
 [ext_resource type="Texture2D" uid="uid://uafkdssn8n4w" path="res://map/map_part_aside/map_partt_aside_副本8.png" id="9_s6yhq"]
+[ext_resource type="Script" uid="uid://c3m1ffguru1g0" path="res://map/script/map_partt_aside_lefttop_5.gd" id="9_vbwqo"]
 [ext_resource type="Texture2D" uid="uid://m2rkhorub2bc" path="res://map/map_part_aside/map_partt_aside_副本9.png" id="10_kxref"]
+[ext_resource type="Script" uid="uid://br4suyab6cxr4" path="res://map/script/map_partt_aside_lefttop_1.gd" id="11_3v4th"]
 [ext_resource type="Texture2D" uid="uid://pfcpv75hewy" path="res://map/map_part_aside/map_partt_aside_副本10.png" id="11_63utp"]
+[ext_resource type="Script" uid="uid://cnqg4r73iwln1" path="res://map/script/map_partt_aside_lefttop_6.gd" id="11_qwnu0"]
 [ext_resource type="Texture2D" uid="uid://bmuwqkjro1gub" path="res://card/card_副本1.png" id="11_saqon"]
-[ext_resource type="Script" uid="uid://dialuuil5tin8" path="res://map/Cards2.cs" id="12_8ta2u"]
+[ext_resource type="Script" uid="uid://crj4jrg7d0p8a" path="res://map/script/map_partt_aside_lefttop_7.gd" id="13_q0bqh"]
+[ext_resource type="Script" uid="uid://gup8c8yonm6n" path="res://map/script/map_partt_aside_lefttop_8.gd" id="15_vr2bg"]
+[ext_resource type="Script" uid="uid://dt3wgo5pof1ub" path="res://map/script/map_partt_aside_lefttop_9.gd" id="17_0071i"]
+[ext_resource type="Script" uid="uid://d1l7fpdxml83d" path="res://map/script/map_partt_aside_lefttop_10.gd" id="19_2u2m7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8ta2u"]
 size = Vector2(720, 1280)
 
+[sub_resource type="CSharpScript" id="CSharpScript_3v4th"]
+script/source = "using Godot;
+using System;
+
+public partial class Cards2 : Node2D
+{
+	
+}
+"
+
 [node name="MainMap" type="Node2D"]
+script = ExtResource("1_8ta2u")
 
 [node name="MapParttAside_lefttop" type="AspectRatioContainer" parent="."]
 offset_left = 320.0
 offset_top = 208.0
 offset_right = 1376.0
 offset_bottom = 744.0
-script = ExtResource("1_3v4th")
 
 [node name="MapParttAside_lefttop2" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -33,11 +52,12 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("3_8ta2u")
 
 [node name="MapParttAside_lefttop2" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop2"]
-visible = false
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+flat = true
+script = ExtResource("3_wdksk")
 
 [node name="MapParttAside_lefttop3" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -46,11 +66,12 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("4_3v4th")
 
 [node name="MapParttAside_lefttop3" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop3"]
-visible = false
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+flat = true
+script = ExtResource("5_ryr2b")
 
 [node name="MapParttAside_lefttop4" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -59,11 +80,12 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("5_bgocw")
 
 [node name="MapParttAside_lefttop4" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop4"]
-visible = false
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+flat = true
+script = ExtResource("7_ajdvo")
 
 [node name="MapParttAside_lefttop5" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -72,11 +94,12 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("6_70p4u")
 
 [node name="MapParttAside_lefttop5" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop5"]
-visible = false
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+flat = true
+script = ExtResource("9_vbwqo")
 
 [node name="MapParttAside_lefttop6" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -85,11 +108,12 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("7_wjadj")
 
 [node name="MapParttAside_lefttop6" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop6"]
-visible = false
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+flat = true
+script = ExtResource("11_qwnu0")
 
 [node name="MapParttAside_lefttop7" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -98,11 +122,12 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("8_l5sph")
 
 [node name="MapParttAside_lefttop7" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop7"]
-visible = false
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+flat = true
+script = ExtResource("13_q0bqh")
 
 [node name="MapParttAside_lefttop8" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -111,11 +136,12 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("9_s6yhq")
 
 [node name="MapParttAside_lefttop8" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop8"]
-visible = false
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+flat = true
+script = ExtResource("15_vr2bg")
 
 [node name="MapParttAside_lefttop9" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -124,11 +150,12 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("10_kxref")
 
 [node name="MapParttAside_lefttop9" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop9"]
-visible = false
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+flat = true
+script = ExtResource("17_0071i")
 
 [node name="MapParttAside_lefttop10" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -137,11 +164,12 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("11_63utp")
 
 [node name="MapParttAside_lefttop10" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop10"]
-visible = false
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+flat = true
+script = ExtResource("19_2u2m7")
 
 [node name="MapParttAside_lefttop1" type="Sprite2D" parent="MapParttAside_lefttop"]
 show_behind_parent = true
@@ -149,11 +177,14 @@ scale = Vector2(1.6, 0.8)
 texture = ExtResource("1_28ir7")
 
 [node name="MapParttAside_lefttop1" type="Button" parent="MapParttAside_lefttop/MapParttAside_lefttop1"]
-visible = false
 offset_left = -100.0
 offset_top = -100.0
 offset_right = 100.0
 offset_bottom = 100.0
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("11_3v4th")
 
 [node name="cards" type="Node2D" parent="."]
 visible = false
@@ -234,7 +265,7 @@ texture = ExtResource("11_saqon")
 visible = false
 position = Vector2(216, 240)
 scale = Vector2(0.25, 0.25)
-script = ExtResource("12_8ta2u")
+script = SubResource("CSharpScript_3v4th")
 
 [node name="card1" type="Node2D" parent="cards2"]
 
@@ -305,3 +336,14 @@ shape = SubResource("RectangleShape2D_8ta2u")
 
 [node name="card1" type="Sprite2D" parent="cards2/card7"]
 texture = ExtResource("11_saqon")
+
+[connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop2/MapParttAside_lefttop2" to="." method="_on_map_partt_aside_lefttop_2_pressed"]
+[connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop3/MapParttAside_lefttop3" to="MapParttAside_lefttop/MapParttAside_lefttop3/MapParttAside_lefttop3" method="_on_pressed"]
+[connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop4/MapParttAside_lefttop4" to="MapParttAside_lefttop/MapParttAside_lefttop4/MapParttAside_lefttop4" method="_on_pressed"]
+[connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop5/MapParttAside_lefttop5" to="MapParttAside_lefttop/MapParttAside_lefttop5/MapParttAside_lefttop5" method="_on_pressed"]
+[connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop6/MapParttAside_lefttop6" to="." method="_on_map_partt_aside_lefttop_6_pressed"]
+[connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop7/MapParttAside_lefttop7" to="MapParttAside_lefttop/MapParttAside_lefttop7/MapParttAside_lefttop7" method="_on_pressed"]
+[connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop8/MapParttAside_lefttop8" to="MapParttAside_lefttop/MapParttAside_lefttop8/MapParttAside_lefttop8" method="_on_pressed"]
+[connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop9/MapParttAside_lefttop9" to="MapParttAside_lefttop/MapParttAside_lefttop9/MapParttAside_lefttop9" method="_on_pressed"]
+[connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop10/MapParttAside_lefttop10" to="MapParttAside_lefttop/MapParttAside_lefttop1/MapParttAside_lefttop1" method="_on_map_partt_aside_lefttop_10_pressed"]
+[connection signal="pressed" from="MapParttAside_lefttop/MapParttAside_lefttop1/MapParttAside_lefttop1" to="MapParttAside_lefttop/MapParttAside_lefttop1/MapParttAside_lefttop1" method="_on_pressed"]

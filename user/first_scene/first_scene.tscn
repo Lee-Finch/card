@@ -1,4 +1,28 @@
-[gd_scene format=3 uid="uid://dnm0bkamurovt"]
+[gd_scene load_steps=2 format=3 uid="uid://dnm0bkamurovt"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_5f087"]
+script/source = "using Godot;
+using System;
+
+
+
+
+public partial class NewScript : Button
+{
+	public override void _Ready()
+	{
+	    var button = new Button();
+	    button.Text = \"Click me\";
+	    button.Pressed += ButtonPressed;
+	    AddChild(button);
+	}
+
+	private void ButtonPressed()
+	{
+	    GD.Print(\"4\");
+	}
+}
+"
 
 [node name="FirstScene" type="Node2D"]
 
@@ -21,7 +45,10 @@ alignment = 1
 [node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
+disabled = true
+action_mode = 0
 text = "log in"
+script = SubResource("CSharpScript_5f087")
 
 [node name="Button2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
