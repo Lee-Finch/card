@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxj0smps4eiqk"
-path="res://.godot/imported/map_partt_aside.png-89e341429d54a530b3135ec13656bdcc.ctex"
+uid="uid://pfcpv75hewy"
+path="res://.godot/imported/map_partt_aside_副本10.png-70561081d63dec5921f2e0763920e2ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://map/map_partt_aside.png"
-dest_files=["res://.godot/imported/map_partt_aside.png-89e341429d54a530b3135ec13656bdcc.ctex"]
+source_file="res://map/map_part_aside/map_partt_aside_副本10.png"
+dest_files=["res://.godot/imported/map_partt_aside_副本10.png-70561081d63dec5921f2e0763920e2ce.ctex"]
 
 [params]
 
