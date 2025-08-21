@@ -1,8 +1,12 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://b4mksv8pa61cv"]
 
 [ext_resource type="Script" uid="uid://c4o157g5ot7fc" path="res://Game.cs" id="1_qeg7m"]
 
 [sub_resource type="Theme" id="Theme_uchyk"]
+=======
+[gd_scene format=3 uid="uid://b4mksv8pa61cv"]
+>>>>>>> Stashed changes
 
 [node name="default page" type="Control"]
 layout_mode = 3
@@ -12,49 +16,35 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="title" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.382
-anchor_right = 0.5
-anchor_bottom = 0.382
-offset_left = -80.0
-offset_top = -84.5
-offset_right = 80.0
-offset_bottom = 84.5
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_uchyk")
-theme_override_font_sizes/font_size = 60
-text = "CARD
-"
-horizontal_alignment = 1
-
-[node name="Setting" type="Button" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+clip_contents = true
 layout_mode = 0
-offset_left = 728.0
+offset_left = 720.0
 offset_top = 480.0
-offset_right = 871.0
-offset_bottom = 543.0
-theme_override_font_sizes/font_size = 40
-text = "Setting"
+offset_right = 863.0
+offset_bottom = 677.0
 
-[node name="Log in" type="Button" parent="."]
-layout_mode = 0
-offset_left = 736.0
-offset_top = 584.0
-offset_right = 859.0
-offset_bottom = 647.0
+[node name="Log in" type="Button" parent="VBoxContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "Log in"
 
-[node name="start" type="Button" parent="."]
-layout_mode = 0
-offset_left = 736.0
-offset_top = 696.0
-offset_right = 859.0
-offset_bottom = 759.0
+[node name="sign in" type="Button" parent="VBoxContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 40
+<<<<<<< Updated upstream
 text = "Start"
 script = ExtResource("1_qeg7m")
+=======
+text = "Sign in"
+
+[node name="Setting" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Setting"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+>>>>>>> Stashed changes
